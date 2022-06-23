@@ -38,18 +38,17 @@ a.link:hover{
     
 }
 
-.test{
-    width:50px;
-    background-color: red;
-}
 /* Styling FOR NAVBAR */
 .navbar{
     background-color: white;
 }
 
-.link{
+a.link{
     color:var(--main-bg-color);
     font-size:1.25rem;
+}
+.bg-dark-blue{
+    background-color: var(--main-bg-color);
 }
 
 /* Add Javascript to display none and or change class */
@@ -98,35 +97,17 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
 .card-info{
     box-shadow: 1px 1.5px 4px;
 }
+
 .card-info img{
     width: 80px;
 }
 
-.buttons {
-    border: none;
-    color: white;
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 4px 2px;
-    cursor: pointer;
-    background-color: var(--main-button-color);
-    border-radius: 4%;
-}
-
-.buttons a{
-    color:white;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
 /* END CARD-Info */
 
 /* ABOUT ME Section */
 .accordion-item{
     border:0 !important;
-    border-bottom: 1px solid var(--main-bg-color)!important;
+    border-bottom: 1px solid var(--main-bg-color) !important;
 }
 
 
@@ -139,3 +120,31 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
     background-color: var(--main-bg-color);
     position: relative;
 }
+
+
+@media only screen and (min-width: 800px) {
+    .navbar-nav {
+        height: 5vh;   
+    }
+    .hero-section{
+        height: 60vh;
+    }
+    .hero-text h1{
+        font-size: 72px;
+        padding-top:50px;
+    }
+    .custom-row{
+        display: flex;
+        height: 70vh; 
+    }
+    .custom-row h2{
+        padding-top: 40px;
+    } 
+    .custom-row:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    div.my-5{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+  }

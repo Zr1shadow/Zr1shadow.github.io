@@ -32,16 +32,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-center justify-content-evenly">
               <li class="nav-item">
-                <a class="nav-link link" href="#">Projects</a>
+                <a class="nav-link link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link" href="#">About Me</a>
+                <a class="nav-link link" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link" href="#">Testimonals</a>
+                <a class="nav-link link" href="#testimonals">Testimonals</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link" href="#">Contact</a>
+                <a class="nav-link link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -59,70 +59,66 @@
 
     <!-- Projects + About Me Section -->
     
-    <div class="container-fluid text-center mb-5">
+    <div class="custom-row">
       <!-- Projects -->
-      <h2 class="titles mb-5">Projects</h2>
-      <div class="container card-info ">
-        <div class="d-flex flex-nowrap pt-2 justify-content-around">
-          <img src="IMG/3.JPG" alt="">
-          <div class="flex-column ms-5">
-            <h3 class="titles">MangaScraper</h3>
-            <div class="d-flex justify-content-between">
-              <button class="buttons button1">
-                <a class="me-2" href="https://github.com/Zr1shadow/personal_flask_website">Github</a>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </button>
-                
-              <button class="buttons button1">
-                <a class="me-2" href="www.google.com">Site</a>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </button>   
+      <div class="container my-5 py-5" id="projects">
+        <h2 class="titles mb-5">Projects</h2>
+        <div class="card-info bg-white">
+          <div class="d-flex flex-nowrap pt-2 justify-content-between">
+            <img class="ms-3" src="IMG/3.JPG" alt="">
+            <div class="flex-column me-1">
+              <h3 class="titles">MangaScraper</h3>
+              <div class="d-flex justify-content-between">
+                <a class="me-2 btn btn-primary" href="https://github.com/Zr1shadow/personal_flask_website">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="me-2 btn btn-primary" href="https://manga-scrapper.herokuapp.com/post/manga">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card-content text-start pb-2">
-          <hr class="lines">
-          <p class="px-3">Website that scraps infomation to my site that is stored in database and can be deleted</p>
+          <div class="card-content text-start p-2">
+            <hr class="lines">
+            <p class="px-3">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+          </div>
         </div>
       </div>
-    </div>
+    
 
-    <!-- About Me -->
-    <div class="container mb-5">
-      <h2 class="titles mb-5">About Me </h2>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <i class="fa-solid fa-font-awesome fs-3 me-2 icon"></i> Leader
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <i class="fa-solid fa-person-running fs-3 me-2 icon"></i> Runner
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <!-- About Me -->
+      <div class="container-fluid my-5 bg-dark-blue py-5" id="about-me">
+        <h2 class="titles mb-5 text-white">About Me </h2>
+        <div class="accordion container" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <i class="fa-solid fa-font-awesome fs-3 me-2 icon"></i> Leader
+              </button>
+            </h3>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <i class="fa-solid fa-file-code  fs-3 me-2 icon"></i> Dev
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body d-flex justify-content-around">
-              <i class="fa-brands fa-html5 fs-1 icon"></i>  <i class="fa-brands fa-css3-alt fs-1 icon"></i> 
-              <i class="fa-brands fa-bootstrap fs-1 icon"></i> <i class="fa-brands fa-python fs-1 icon"></i>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fa-solid fa-person-running fs-3 me-2 icon"></i> Runner
+              </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-file-code  fs-3 me-2 icon"></i> Dev
+              </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body d-flex justify-content-around">
+                <i class="fa-brands fa-html5 fs-1 icon"></i>  <i class="fa-brands fa-css3-alt fs-1 icon"></i> 
+                <i class="fa-brands fa-bootstrap fs-1 icon"></i> <i class="fa-brands fa-python fs-1 icon"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -130,75 +126,76 @@
     </div>
 
     <!-- Testimonals Section -->
-    <div class="container-fluid text-center mb-5">
-      <h2 class="titles mb-5">Testimonals</h2>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner container mb-5">
-          <div class="carousel-item active">
-            <div class="border">
-              <div class="d-flex flex-nowrap pt-2 justify-content-around align-items-center">
-                <i class="fa-regular fa-user icon display-2"></i>
-                <div class="flex-column ms-5">
-                  <h3 class="titles">Esteban Solis Loya</h3>
+    <div class="custom-row">
+      <div class="container-fluid text-center my-5 py-5" id="testimonals">
+        <h2 class="titles mb-5 testimonals">Testimonals</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner container mb-5">
+            <div class="carousel-item active">
+              <div class="border bg-white">
+                <div class="d-flex flex-nowrap pt-2 justify-content-between align-items-center">
+                  <i class="fa-regular fa-user icon display-2 ms-3"></i>
+                  <div class="flex-column ms-5">
+                    <h3 class="titles me-3">Esteban Solis Loya</h3>
+                  </div>
                 </div>
-              </div>
-              <div class="card-content text-start pb-2">
-                <hr class="lines mx-2">
-                <p class="px-3">“After creating the world’s most intelligent AI, Raul went on to become the CEO of Media Queries and Marathons for Apple, Google, Amazon, and MySpace. After being promoted to President of SpaceX, Raul is now teaching students how to code and live on Mars.”</p>
+                <div class="card-content text-start pb-2">
+                  <hr class="lines mx-2">
+                  <p class="px-3">“After creating the world’s most intelligent AI, Raul went on to become the CEO of Media Queries and Marathons for Apple, Google, Amazon, and MySpace. After being promoted to President of SpaceX, Raul is now teaching students how to code and live on Mars.”</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="border">
-              <div class="d-flex flex-nowrap pt-2 justify-content-around align-items-center">
-                <i class="fa-regular fa-user icon display-2"></i>
-                <div class="flex-column ms-5">
-                  <h3 class="titles">Michael Vanderpool</h3>
+            <div class="carousel-item">
+              <div class="border bg-white">
+                <div class="d-flex flex-nowrap pt-2 justify-content-between align-items-center">
+                  <i class="fa-regular fa-user icon display-2 ms-3"></i>
+                  <div class="flex-column ms-5">
+                    <h3 class="titles me-3">Michael Vanderpool</h3>
+                  </div>
                 </div>
-              </div>
-              <div class="card-content text-start pb-2">
-                <hr class="lines mx-2">
-                <p class="px-3">Website that scraps infomation to my site that is stored in database and can be deleted</p>
+                <div class="card-content text-start pb-2">
+                  <hr class="lines mx-2">
+                  <p class="px-3">Website that scraps infomation to my site that is stored in database and can be deleted</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    
 
-    <!-- Contact Section -->
-    <div class="container-fluid text-center mb-5">
-      <h2 class="titles mb-5">Contact</h2>
-      <div class="container">
-        <form class="row g-3 text-start">
-          <div class="col">
-            <label for="firstName" class="form-label ms-2">First Name</label>
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-          </div>
-          <div class="col">
-            <label for="LastName" class="form-label ms-2">Last Name</label>
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-          </div>
-          <div class="col-12">
-            <label for="inputEmail4" class="form-label ms-2">Email</label>
-            <input type="email" class="form-control" placeholder="Email" aria-label="Last name">
-            <label for="exampleFormControlTextarea1" class="form-label mt-3 ms-2">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-          </div>
-          <div class="col text-center">
-          <a class="btn btn-primary" href="#" role="button">Submit</a>
-          </div>
-        </form>
-        
+      <!-- Contact Section -->
+      <div class="container-fluid text-center  py-5 bg-dark-blue" id="contact">
+        <h2 class="titles mb-5 contact text-white">Contact</h2>
+        <div class="container">
+          <form class="row g-3 text-start">
+            <div class="col">
+              <label for="firstName" class="form-label text-white ms-2">First Name</label>
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <label for="LastName" class="form-label text-white ms-2">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+            <div class="col-12">
+              <label for="inputEmail4" class="form-label text-white ms-2">Email</label>
+              <input type="email" class="form-control" placeholder="Email" aria-label="Last name">
+              <label for="exampleFormControlTextarea1" class="form-label mt-3 text-white ms-2">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+            </div>
+            <div class="col text-center">
+            <a class="btn btn-primary" href="#" role="button">Submit</a>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <!-- Footer -->
     <footer class="text-end p-2">
-      <hr class="lines">
       <a class="text-decoration-none link" href="#home">&#60;/Raul&#62;</a>
     </footer>
 

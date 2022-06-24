@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     
     <title>Raul</title>
 </head>
@@ -25,7 +26,7 @@
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container-fluid mx-3">
-          <a class="navbar-brand link" href="#">&#60;Raul&#62;</a>
+          <a class="navbar-brand link titles" href="#">&#60;Raul&#62;</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -64,19 +65,21 @@
       <div class="container my-5 py-5" id="projects">
         <h2 class="titles mb-5">Projects</h2>
         <div class="card-info bg-white">
-          <div class="d-flex flex-nowrap pt-2 justify-content-between">
-            <img class="ms-3" src="IMG/3.JPG" alt="">
-            <div class="flex-column me-1">
+          <div class="d-flex flex-nowrap pt-2 me-5">
+            <div class="ms-3" style="width: 100%;">
+            <img src="IMG/3.JPG" alt="">
+            </div>
+            <div class="d-flex flex-column ms-5 justify-content-center align-items-center w-100">
               <h3 class="titles">MangaScraper</h3>
-              <div class="d-flex justify-content-between">
-                <a class="me-2 btn btn-primary" href="https://github.com/Zr1shadow/personal_flask_website">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a class="me-2 btn btn-primary" href="https://manga-scrapper.herokuapp.com/post/manga">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+              <div class="d-flex">
+                <a class="btn btn-primary content" href="https://github.com/Zr1shadow/personal_flask_website">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="ms-1 btn btn-primary content" href="https://manga-scrapper.herokuapp.com/post/manga">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
               </div>
             </div>
           </div>
-          <div class="card-content text-start p-2">
+          <div class="text-start p-2">
             <hr class="lines">
-            <p class="px-3">orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+            <p class="px-3 content">Python application that uses: Flask, SQLalchemy, Selenium to scrap data from sites to my own which are then stored in the database to be manipulated. </p>
           </div>
         </div>
       </div>
@@ -85,39 +88,43 @@
       <!-- About Me -->
       <div class="container-fluid my-5 bg-dark-blue py-5" id="about-me">
         <h2 class="titles mb-5 text-white">About Me </h2>
-        <div class="accordion container" id="accordionExample">
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <i class="fa-solid fa-font-awesome fs-3 me-2 icon"></i> Leader
-              </button>
-            </h3>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa-solid fa-person-running fs-3 me-2 icon"></i> Runner
-              </button>
-            </h3>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <div class="accordion container" id="accordionExample">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <i class="fa-solid fa-font-awesome fs-3 me-2 icon"></i> Leader
+                </button>
+              </h3>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body content">
+                  Some of my qualities are: <b>Empathy</b>, <b>Self-Awareness</b>, <b>Delegation</b>, <b>Communication</b>, <b>Courage</b>, and many more. 
+                </div>
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h3 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <i class="fa-solid fa-file-code  fs-3 me-2 icon"></i> Dev
-              </button>
-            </h3>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body d-flex justify-content-around">
-                <i class="fa-brands fa-html5 fs-1 icon"></i>  <i class="fa-brands fa-css3-alt fs-1 icon"></i> 
-                <i class="fa-brands fa-bootstrap fs-1 icon"></i> <i class="fa-brands fa-python fs-1 icon"></i>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa-solid fa-person-running fs-3 me-2 icon"></i> Runner
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body content">
+                  <b>Past Accomplishment</b>: Running a marathon in 6 hours and 32mins. <br>
+                  <b>Upcoming Accomplishment</b>: Running the Boston Marathon.  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-file-code  fs-3 me-2 icon"></i> Dev
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body d-flex justify-content-around">
+                  <i class="fa-brands fa-html5 fs-1 icon"></i>  <i class="fa-brands fa-css3-alt fs-1 icon"></i> 
+                  <i class="fa-brands fa-bootstrap fs-1 icon"></i> <i class="fa-brands fa-python fs-1 icon"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -143,7 +150,7 @@
                     <h3 class="titles me-3">Esteban Solis Loya</h3>
                   </div>
                 </div>
-                <div class="card-content text-start pb-2">
+                <div class="card-content content text-start pb-2">
                   <hr class="lines mx-2">
                   <p class="px-3">“After creating the world’s most intelligent AI, Raul went on to become the CEO of Media Queries and Marathons for Apple, Google, Amazon, and MySpace. After being promoted to President of SpaceX, Raul is now teaching students how to code and live on Mars.”</p>
                 </div>
@@ -157,7 +164,7 @@
                     <h3 class="titles me-3">Michael Vanderpool</h3>
                   </div>
                 </div>
-                <div class="card-content text-start pb-2">
+                <div class="card-content content text-start pb-2">
                   <hr class="lines mx-2">
                   <p class="px-3">Website that scraps infomation to my site that is stored in database and can be deleted</p>
                 </div>
@@ -196,7 +203,7 @@
     </div>
     <!-- Footer -->
     <footer class="text-end p-2">
-      <a class="text-decoration-none link" href="#home">&#60;/Raul&#62;</a>
+      <a class="text-decoration-none link titles" href="#">&#60;/Raul&#62;</a>
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->

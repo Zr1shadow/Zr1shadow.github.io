@@ -2,6 +2,9 @@
     --main-bg-color: #14213D;
     --main-icon-color: #FCA311;
     --main-button-color: #0052CC;
+    --main-content-color:#333533;
+    --main-title-font: 'Roboto', sans-serif;
+    --main-content-font:'Montserrat', sans-serif;
 }
 
 /* Makes icons render reliably (for pseudo-elements)*/
@@ -28,6 +31,7 @@ a.link:hover{
     color:var(--main-bg-color);
     font-weight: bold;
     text-align: center;
+    font-family: var(--main-title-font);
 }
 
 .lines{
@@ -35,7 +39,8 @@ a.link:hover{
     opacity: 1;
 }
 .content{
-    
+    color: var(--main-content-color);
+    font-family: var(--main-content-font);
 }
 
 /* Styling FOR NAVBAR */
@@ -99,7 +104,8 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
 }
 
 .card-info img{
-    width: 80px;
+    width: 100%;
+    height: 100%;
 }
 
 /* END CARD-Info */
@@ -121,8 +127,7 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
     position: relative;
 }
 
-
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 992px) {
     .navbar-nav {
         height: 5vh;   
     }
@@ -139,7 +144,17 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
     }
     .custom-row h2{
         padding-top: 40px;
+        font-size: 54px;
     } 
+    .titles{
+        font-size: 36px;
+    }
+    button.accordion-button, div.accordion-button i{
+        font-size: 36px !important;
+    }
+    .content{
+        font-size:20px;
+    }
     .custom-row:nth-child(even){
         flex-direction: row-reverse;
     }
@@ -147,4 +162,9 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
+    .card-info img{
+        width: 100%;
+        height: 90px;
+    }
   }
+

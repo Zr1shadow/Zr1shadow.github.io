@@ -130,10 +130,25 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
 }
 
 /* Card-info */
+.card-section{
+    width: 100%;
+}
+
 .card-info{
     box-shadow: 1px 1.5px 4px;
 }
 
+.card-img-bg{
+    width: 100%;
+    height: 20vh;
+    background-color: var(--main-bg-color);
+    border-radius: 5%;
+}
+
+.card-img-bg img{
+    width: 90%;
+    height: 90%;
+}
 /* .card-info img{
     width: 100%;
     height: 100%;
@@ -199,9 +214,12 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
-    .card-info img{
-        width: 100%;
-        height: 90px;
+    .card-img-bg{
+        height: 40vh;
+    }
+    .card-img-bg img{
+        width: 90%;
+        height: 90%;
     }
     .langs img{
         height: 90px;

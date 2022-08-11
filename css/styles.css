@@ -43,6 +43,11 @@ a.link:hover{
     font-family: var(--main-content-font);
 }
 
+.main-section .container-fluid:nth-child(odd), .main-section .container-fluid:nth-child(odd) h2 {
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
 /* Styling FOR NAVBAR */
 .navbar{
     background-color: white;

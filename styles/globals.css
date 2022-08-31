@@ -1,0 +1,32 @@
+:root{
+  --main-bg-color: #14213D;
+  --main-icon-color: #FCA311;
+  --main-button-color: #0052CC;
+  --main-content-color:#333533;
+  --main-title-font: 'Roboto', sans-serif;
+  --main-content-font:'Montserrat', sans-serif;
+}
+
+/* Makes icons render reliably (for pseudo-elements)*/
+.icon::before {
+  /* removed font- based rules */
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

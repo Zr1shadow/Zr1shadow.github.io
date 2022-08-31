@@ -1,0 +1,20 @@
+.heroSection{
+    /* background-image: url("../public/hero-bg.jpg"); */
+    /* -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%); */
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    padding: .5rem;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.heroText{
+    font-size: 72px;
+}
+
+.heroTextSpecial{
+    color: var(--main-icon-color)
+}

@@ -148,7 +148,7 @@ button[aria-expanded="true"] .navbar-toggler-icon::before{
 .card-img-bg img{
     width: 90%;
     height: 90%;
-    border: 2px var(--main-icon-color) solid;
+    border: 2px var(--main-bg-color) solid;
 }
 /* .card-info img{
     width: 100%;

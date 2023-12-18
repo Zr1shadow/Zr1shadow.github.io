@@ -18,6 +18,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+    <!-- Send Emails -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+ 
+    <script type="text/javascript">
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "sender@email_address.com",
+                Password: "Enter your password",
+                To: 'raulaguilar360+portfolio@gmail.com',
+                From: "sender@email_address.com",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+            })
+                .then(function (message) {
+                    alert("Mail sent successfully")
+                });
+        }
+    </script>
     
     <title>Raul</title>
 </head>
@@ -264,7 +285,7 @@
       
 
         <!-- Contact Section -->
-        <div class="container-fluid text-center  py-5" id="contact">
+        <!-- <div class="container-fluid text-center  py-5" id="contact">
           <h2 class="titles mb-5 contact">Contact</h2>
           <div class="container">
             <form class="row g-3 text-start">
@@ -283,15 +304,15 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
               </div>
               <div class="col text-center">
-              <a class="btn btn-primary" href="#" role="button">Submit</a>
+              <a class="btn btn-primary" href="#" role="button" onclick="sendEmail()">Submit</a>
               </div>
             </form>
           </div>
         </div>
-    </div>
+    </div> -->
     <!-- Footer -->
     <footer class="text-end p-2 d-flex justify-content-between">
-     <h2>These Projects are all works in progress, just like myself. Thank you for visiting</h2> <a class="text-decoration-none link titles" href="#">&#60;/Raul&#62;</a>
+     <h6>These Projects are all works in progress, just like myself. Thank you for visiting</h6> <a class="text-decoration-none link titles" href="#">&#60;/Raul&#62;</a>
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
